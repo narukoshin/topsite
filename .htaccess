@@ -1,0 +1,40 @@
+Options +FollowSymLinks -Indexes -MultiViews
+RewriteEngine on
+
+RewriteRule ^register$ pages/register.php [L]
+RewriteRule ^register/$ pages/register.php [L]
+
+RewriteRule ^login$ pages/login.php [L]
+RewriteRule ^login/$ pages/login.php [L]
+
+RewriteRule ^logout$ pages/logout.php [L]
+RewriteRule ^logout/$ pages/logout.php [L]
+
+RewriteRule ^profile$ pages/profile.php [L]
+RewriteRule ^profile/$ pages/profile.php [L]
+
+RewriteRule ^c$ pages/category.php [L]
+RewriteRule ^c/$ pages/category.php [L]
+
+RewriteRule ^c/([0-9]+).*$ pages/category.php?c_id=$1&c_name=$2 [L]
+RewriteRule ^c/([0-9]+)$ pages/category.php?c_id=$1 [L]
+RewriteRule ^c/([0-9]+)/$ pages/category.php?c_id=$1 [L]
+
+RewriteRule ^out$ pages/out.php [L]
+RewriteRule ^out/([0-9]*)$ pages/out.php?id=$1 [L]
+RewriteRule ^out/$ pages/out.php [L]
+RewriteRule ^out/([0-9]*)/$ pages/out.php?id=$1 [L]
+
+RewriteRule ^in$ pages/in.php [L]
+RewriteRule ^in/([0-9]+)$ pages/in.php?id=$1 [L]
+RewriteRule ^in/$ pages/in.php [L]
+RewriteRule ^in/([0-9]+)/$ pages/in.php?id=$1 [L]
+
+RewriteRule ^page/([0-9]+)$ index.php?page=$1 [L]
+RewriteRule ^page/([0-9]+)/$ index.php?page=$1 [L]
+
+RewriteRule ^site/add$ pages/site_add.php [L]
+RewriteRule ^site/add/$ pages/site_add.php [L]
+
+RewriteRule ^activate$ pages/activate.php [L]
+RewriteRule ^activate/$ pages/activate.php [L]

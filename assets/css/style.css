@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #6f6764;
+}
+
+nav {
+    background-color: #232323;
+    width: 100%;
+    height: auto;
+    position: fixed;
+    z-index: 10000;
+}
+
+ul, li, ol {
+    list-style-type: none;
+}
+
+nav > ul > li {
+    float: left;
+    padding: 10px 10px;
+}
+
+nav > ul > li:hover > a {
+    transition: all .1s ease-in-out;
+}
+
+nav > ul > li > a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #a4a4a4;
+    font-size: 10pt;
+}
+
+nav > ul > li > a:hover,
+nav > ul > li > a:focus {
+    color: white;
+    text-decoration: none;
+}
+
+.container {
+    background-color: white;
+    width: 1000px;
+    height: auto;
+    padding-top: 70px;
+}
+
+.container > #sidebar {
+    width: 300px;
+    padding-bottom: 10px;
+}
+
+.container > #sidebar > ul {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+.container > #sidebar > ul > li {
+    border-bottom: 1px solid #ddd;
+}
+
+.container > #sidebar > ul > li:first-child {
+    text-align: center;
+    color: #2d2d2d;
+    padding: 5px;
+}
+.container > #sidebar > ul > li:last-child {
+    border: 0;
+}
+
+.glyphicon {
+    font-size: 9pt;
+}
+
+.container > #sidebar > ul > li > a {
+    border: 0;
+    background: 0;
+    transition: all .1s ease-in-out;
+}
+
+.container > #sidebar > ul > li > a:hover {
+    margin-left: 5px;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.container > #center,
+.container > #vote {
+    margin-left: 50px;
+    width: 620px;
+}
+
+.container > #center > .banner > #top {
+    padding: 5px 20px 5px 20px;
+}
+
+.container > #center > .banner {
+    margin-bottom: 10px;
+}
+
+.container > #center > .banner,
+.container > #center > .banner > #top {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    float: left;
+    width: 100%;
+}
+
+.container > #center > .banner > #top > #desc {
+    color: #787777;
+    font-size: 9pt;
+}
+
+.container > #center > .banner > #content {
+    text-align: center;
+}
+
+.container > #center > .banner > #content > a > img {
+    padding: 5px;
+    max-width: 478px;
+    max-height: 70px;
+}
+
+.container > #center > .banner > #top > .right > #green {
+    color: green;
+}
+
+.container > #center > .banner > #top > .right > #red {
+    color: red;
+}
+
+.container > #register,
+.container > #login,
+.container > #site {
+    width: 670px;
+}
+
+.container > #register > form,
+.container > #login > form,
+.container > #site > form {
+    display: table;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+}
+
+.container > #register > form > .input-group,
+.container > #login > form > .input-group,
+.container > #site > form > .input-group {
+    margin-bottom: 5px;
+    width: 250px;
+}
+
+.container > #register > form > button,
+.container > #login > form > button,
+.container > #site > form > button {
+    width: 100%;
+}
+
+.alert {
+    text-align: center;
+    width: 250px;
+}
+
+.label-info {
+    display: block;
+    padding: 10px;
+    background-color: #232323;
+    font-size: 9pt;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    width: 300px;
+}
+
+.container > #center > #category_title,
+.container > #vote > #category_title {
+    border-bottom: 1px solid rgb(220, 220, 220);
+    padding-bottom: 5px;
+}
+
+.container > #center > .alert,
+.container > #vote > form > .alert {
+    width: 100%;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 3px;
+}
+
+::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb:active,
+::-webkit-scrollbar-thumb:hover {
+    background: #F44336;
+}
+
+::-webkit-scrollbar-track,
+::-webkit-scrollbar-track:hover {
+    background: #666666;
+}
+
+::-webkit-scrollbar-track:active {
+    background: #333333;
+}
+
+.btn-custom-vote {
+    color: white;
+    background-color: #F44336;
+    transition: all .1s ease-in-out;
+    width: 100%;
+}
+
+.btn-custom-vote:hover,
+.btn-custom-vote:focus {
+    background-color: #CE392E;
+    color: white;
+}
+
+.glyphicon-left {
+    padding-left: 5px;
+}
+
+.glyphicon-right {
+    padding-right: 5px;
+}
+
+#center > .panels > li > .btn-custom-profile {
+    width: 100%;
+    background-color: #3E8BDA;
+    color: white;
+    transition: all .1s ease-in-out;
+}
+
+#center > .panels > li > .btn-custom-profile:hover {
+    background-color: #3370AF;
+}
+
+#center > .panels > li {
+    margin-bottom: 5px;
+}
+
+#site > form > .btn-custom-file {
+    color: white;
+    background-color: #9E9E9E;
+    width: 100%;
+    transition: all .1s ease-in-out;
+}
+
+#site > form > .btn-custom-file:hover {
+    background-color: #777777;
+}
+
+#site > form > .progress {
+    margin-top: 5px;
+    display: none;
+}
